@@ -1,7 +1,5 @@
 console.log("Hello world")
 
 document.querySelector("#btn-roll").addEventListener("click",(event=>{
-    console.log(`They clicked me!!!${event}`)
-
-
+    document.querySelector("#result").innerText=Math.floor(Math.random()*document.querySelector("#range").value)+1
 }))
