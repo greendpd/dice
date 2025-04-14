@@ -19,7 +19,7 @@
         alt="lovely die">
     <div>
         Range: 
-        <input id="range" type="number">
+        <input id="range" type="number" min="2" step="1" onchange="this.value = parseInt(this.value);" onkeydown="if(event.key.match(/\d/)==null &&event.key!=`Delete` &&event.key!=`Backspace` && event.key!=`ArrowLeft` && event.key!=`ArrowRight`) {console.log(event.key);event.preventDefault();}">
         <p></p>
         <button id="btn-roll">Roll!!!</button>
         <p></p>
