@@ -9,21 +9,23 @@
 </head>
 
 <body>
-    <div id="top"></div>
-    <div>
-        Going to roll a dice
-    </div>
+    <div id="entirety">
+        <div id="top"></div>
+        <div>
+            Going to roll a dice
+        </div>
 
-    <img id="dice-image"
-        src="https://cdn11.bigcommerce.com/s-70184/images/stencil/1280x1280/products/328/8282/red-dice-16mm-opaque__75264.1739341696.jpg?c=2"
-        alt="lovely die">
-    <div>
+        <img id="dice-image"
+            src="https://cdn11.bigcommerce.com/s-70184/images/stencil/1280x1280/products/328/8282/red-dice-16mm-opaque__75264.1739341696.jpg?c=2"
+            alt="lovely die">
+        <div id="io-div">
         Range: 
-        <input id="range" type="number" min="2" step="1" onchange="this.value = parseInt(this.value);" onkeydown="if(event.key.match(/\d/)==null &&event.key!=`Delete` &&event.key!=`Backspace` && event.key!=`ArrowLeft` && event.key!=`ArrowRight`) {console.log(event.key);event.preventDefault();}">
+        <input id="range" type="number" min="2" placeholder=6 step="1" onchange="this.value = parseInt(this.value);" onkeydown="if(event.key.match(/\d/)==null &&event.key!=`Delete` &&event.key!=`Backspace` && event.key!=`ArrowLeft` && event.key!=`ArrowRight`) {console.log(event.key);event.preventDefault();}">
         <p></p>
         <button id="btn-roll">Roll!!!</button>
         <p></p>
         Result: <span id="result"></span>
+
     </div>
 
     <script src="scripts.js"></script>
